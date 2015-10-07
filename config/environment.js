@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'simple-blog',
     environment: environment,
+    firebase: 'https://simple-blog-demo.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -16,6 +17,13 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    contentSecurityPolicy: {
+      'font-src': "'self' data: fonts.gstatic.com",
+      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com",
+      'connect-src': "'self' wss://*.firebaseio.com",
+      'frame-src': "'self' https://*.firebaseio.com",
+      'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com"
     }
   };
 
