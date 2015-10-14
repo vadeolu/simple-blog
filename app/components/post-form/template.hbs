@@ -1,0 +1,16 @@
+<form>
+  <p>
+    {{input value=post.title placeholder="Post title"}}
+    {{input value=post.author placeholder="Author"}}
+  </p>
+  {{#if post.title}}
+    <p>
+      {{textarea value=post.text placeholder="Content"}}
+    </p>
+  {{/if}}
+  {{#if post.text}}
+    <p class="publish">
+      <span {{action "writePost" post}} class="btn btn-submit">Publish</span>
+    </p>
+  {{/if}}
+</form>

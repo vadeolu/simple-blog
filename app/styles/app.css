@@ -25,11 +25,6 @@ header {
   margin-bottom: 1em;
 }
 
-.btn {
-  padding: .5em 2em;
-  border-radius: 3px;
-}
-
 .btn:active {
   position: relative;
   top: 1px;
@@ -40,6 +35,64 @@ header {
 }
 
 .btn-submit {
+  padding: .5em 2em;
+  border-radius: 3px;
   background-color: #c0392b;
   color: #fff;
+}
+
+.btn-action {
+  padding: .1em .5em;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.btn-delete {
+  color: #fff !important;
+  background: #d9534f;
+}
+
+.btn-edit {
+  color: #fff !important;
+  background: #337ab7;
+  margin-left: 1em;
+}
+
+.post-index a {
+  text-decoration: none;
+  color: black;
+}
+
+.post-index {
+  margin-right: 5em;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+div.action-buttons {
+  margin-top: 1em;
+}
+
+aside {
+  text-align: center;
+}
+
+aside input {
+  height: 3em;
+  font-weight: bold;
+  margin: .10em;
+  text-align: center;
+}
+
+aside textarea {
+  height: 6em;
+  width: 20em;
+  text-align: center;
+}
+
+form .publish {
+  margin: 0 4em;
 }

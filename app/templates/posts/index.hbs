@@ -1,0 +1,8 @@
+<div class="container post-index">
+  {{#each model.data as |data|}}
+    {{#link-to 'posts.show' data}}
+      {{blog-post post=data removePost="delete" modifyPost="edit"}}
+    {{/link-to}}
+  {{/each}}
+</div>
+<aside>{{outlet}}</aside>
