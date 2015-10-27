@@ -22,6 +22,11 @@ header {
   background-color: #e74c3c;
   color: #fff;
   padding: 2em;
+}
+
+.sub-heading {
+  background-color: #faf4f1;
+  padding: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -96,3 +101,17 @@ aside textarea {
 form .publish {
   margin: 0 4em;
 }
+
+div.sort-buttons {
+  margin-left: 4em;
+}
+
+.btn-sort {
+  padding: .5em 2em;
+  border-radius: 3px;
+  background-color: #d3d3d3;
+  color: #252525 !important;
+  text-decoration: none;
+  margin: 1.5em;
+}
+

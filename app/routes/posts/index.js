@@ -2,10 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return {
-      data: this.store.findAll('post')
-    }
+    return this.store.findAll('post')
   },
+
   actions: {
     delete(post) {
       post.destroyRecord();

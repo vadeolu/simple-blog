@@ -1,5 +1,12 @@
+<section class="sub-heading">
+    <div class="sort-buttons">
+      <a href="#" class="btn-sort" {{action "setSortBy" "createdAt" }}> Sort by Time </a>
+      <a href="#" class="btn-sort" {{action "setSortBy" "title" }}> Sort by Title </a>
+      <a href="#" class="btn-sort" {{action "setSortBy" "author"}}> Sort by Author </a>
+  </div>
+</section>
 <div class="container post-index">
-  {{#each model.data as |data|}}
+  {{#each sortedData as |data|}}
     {{#link-to 'posts.show' data}}
       {{blog-post post=data removePost="delete" modifyPost="edit"}}
     {{/link-to}}
